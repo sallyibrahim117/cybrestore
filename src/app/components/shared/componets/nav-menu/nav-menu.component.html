@@ -1,0 +1,9 @@
+<div class="bg-white position-absolute rounded p-3 list">
+  <ul>
+    <!-- <li *ngFor="let item of page"> -->
+      <li *ngFor="let item of page">
+    <a [routerLink]="[item.link]" routerLinkActive="router-link-active"  class="fw-normal text-capitalize">{{item.label}}</a>
+  </li>
+
+</ul>
+</div>

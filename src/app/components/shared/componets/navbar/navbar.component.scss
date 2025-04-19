@@ -1,0 +1,19 @@
+
+
+.navbar{
+  background-color:#5677fc;
+}
+.active{
+  color: #fffc !important;
+}
+.nav-link{
+  color: white;
+
+}
+.menu{
+  display: none;
+}
+.pageLink:hover .menu{
+display: block !important;
+}
+

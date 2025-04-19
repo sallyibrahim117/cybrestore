@@ -1,0 +1,80 @@
+.link{
+  font-size: 11px;
+
+    border-color: #5677fc !important;
+
+}
+
+.list a {
+  transition: border-bottom 0.3s;
+ color: #212529;
+}
+
+.list a:hover {
+  border-bottom: 1px solid #5677fc;
+  color: #0d6efd;
+}
+.man-sec{
+height: 100vh;
+.card1{
+  top: 1px;
+  right: 75px;
+  width: 45%;
+  .link{
+    color: black;
+    font-size: 15px;
+  }
+  a:hover{
+    color: #0d6efd !important;
+  }
+  a{
+    font-size: 13px;
+
+  }
+  .cart{
+    width: 40px;
+    height: 40px;
+  }
+}
+}
+.allPhones {
+  background-color: #eee;
+}
+.allPhones ,.cellPhone{
+
+  .nav-item{
+    .nav-link{
+      color: black;
+      margin: 0px;
+      &:hover{
+        border-bottom: 3px solid #0d6efd;
+        color:#5677fc ;
+        border-radius: 0px;
+
+            }
+
+    }
+
+
+    color: black;
+
+
+  .nav-link.active{
+    background: transparent;
+    border-bottom: 3px solid #0d6efd;
+    border-radius: 0px;
+
+    color:#5677fc ;
+
+  }
+
+}
+.title{
+  border-bottom: 2px solid blue;
+  width: fit-content;
+  padding-bottom: 10px;
+}
+}
+.discount-img{
+  background-image: url('/assets/imgs/bg.jpg');
+}
