@@ -1,3 +1,31 @@
+
+<div class="container mt-5">
+  <div class=" ">
+    <p-carousel
+        [value]="allimgs()"
+        [numVisible]="8"
+        [numScroll]="3"
+        [circular]="false"
+        [responsiveOptions]="responsiveOptions">
+            <ng-template let-i pTemplate="item">
+                <div>
+                  <!-- <div class="row"> -->
+                    <!-- <div class="col-2" *ngFor="let i of allimgs()"> -->
+                      <div class="card p-3 border-0 rounded-0">
+                        <img [src]="i.im" class="w-100" alt="">
+                        <small class="d-flex justify-content-center">
+
+                          <a class="text-capitalize link">{{i.name}}</a>
+                        </small>
+                      </div>
+                    <!-- </div> -->
+                  <!-- </div> -->
+                </div>
+            </ng-template>
+    </p-carousel>
+  </div>
+</div>
+
 <!-- <div class="card p-3 border course-card">
   <h5 class="text-capitalize m-0">{{course.title}}</h5>
   <small class="fw-bold text-secondary">{{course.des}}</small>

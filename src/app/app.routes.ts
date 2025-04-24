@@ -4,6 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 export const routes: Routes = [  {path:"",redirectTo:"home",pathMatch:"full"},
   {path:'home',loadComponent:()=>import('./components/home/home.component').then(c=>c.HomeComponent)},
   {path:'about',loadComponent:()=>import('./components/about/about.component').then(c=>c.AboutComponent)},
+  {path:'our team',loadComponent:()=>import('./components/our-team/our-team.component').then(c=>c.OurTeamComponent)},
 
 
 ];

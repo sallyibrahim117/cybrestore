@@ -1,10 +1,19 @@
-.course-card{
-  background-color: #98a0d6f2;
-  .pi-angle-right{
-    font-size: 11px;
-  }
-  .btn-slider{
-    font-size: 12px;
-  }
 
+::ng-deep{
+  .p-carousel-indicators{
+    display: none;
   }
+}
+.col-2{
+
+  .card{
+    background-color: #eee;
+    .link{
+      font-size: 13px;
+      color: black;
+  &:hover{
+    color:#0d6efd;
+  }
+    }
+  }
+}

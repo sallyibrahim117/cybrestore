@@ -23,12 +23,10 @@
       <div class="border p-4 h-100">
         <h6 class="text-capitalize">categories</h6>
         <ul class="mt-4 list position-relative">
-          <li>
-            <a class="text-capitalize" ><small>products</small> </a>
+          <li *ngFor="let item of cateogries">
+            <a class="text-capitalize" (click)="changeCategory(item.id)"><small>{{item.name}}</small> </a>
           </li>
-          <li class="mt-1">
-            <a class="text-capitalize"><small>laptop & tablet</small> </a>
-          </li>
+
         </ul>
       </div>
     </div>
@@ -45,7 +43,7 @@
 <!--end category section -->
 <!--start man section -->
 <div class="mt-5 position-relative man-sec">
-  <img src="/assets/imgs/man.jpg" class="w-100" alt="">
+  <!-- <img src="/assets/imgs/man.jpg" class="w-100" alt=""> -->
   <div class="position-absolute  card1 d-flex align-items-center h-100">
     <div class="py-5 px-2 rounded-0  bg-white">
 
@@ -422,5 +420,97 @@
 </div>
  </div>
 <!-- end discount image -->
+ <!-- start carousal section -->
+  <app-carousal></app-carousal>
+ <!-- end carousal section -->
+  <!-- start release -->
+   <div class="container py-5">
+    <div class="row mt-5">
+      <div class="col-md-4 col-12 " *ngFor="let i of release">
+    <app-releases [data]="i"></app-releases>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-12" *ngFor="let item of selling">
+
+        <app-selling-feature [sellingFeatur]="item"></app-selling-feature>
+      </div>
+    </div>
+   </div>
+  <!-- end release -->
+
+  <!--start footer section -->
+<section class="footer">
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-4 col-12">
+      <div class="card footerCrd py-3 px-4 rounded-0">
+        <div class="row align-items-center">
+          <div class="col-md-3 col-12">
+            <div>
+
+              <img src="/assets/imgs/foot1.png" class="w-100" alt="">
+            </div>
+
+          </div>
+          <div class="col-md-9 col-12">
+            <div>
+              <h4 class="text-capitalize text-white fw-light">call center</h4>
+              <h3 class="fw-light"><a class="text-primary footLink">
+                (734) 555.1212</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-12">
+      <div class="card footerCrd py-3 px-4 rounded-0">
+        <div class="row align-items-center">
+          <div class="col-md-3 col-12">
+            <div>
+
+              <img src="/assets/imgs/foot2.png" class="w-100" alt="">
+            </div>
+
+          </div>
+          <div class="col-md-9 col-12">
+            <div>
+              <h4 class="text-capitalize text-white fw-light m-0">free delivery</h4>
+             <p class="text-white m-0"><small class="para">Free delivery on the territory of USA for allamounts over $100</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-12">
+      <div class="card footerCrd py-3 px-4 rounded-0">
+        <div class="row align-items-center">
+          <div class="col-md-3 col-12">
+            <div>
+
+              <img src="/assets/imgs/foot3.png" class="w-100" alt="">
+            </div>
+
+          </div>
+          <div class="col-md-9 col-12">
+            <div>
+              <h4 class="text-capitalize text-white fw-light">gift cards</h4>
+              <h3 class="fw-light"><a class="text-primary footLink">
+                Save up to 20%</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<app-footer-card></app-footer-card>
+</div>
+</section>
+  <!--end footer section -->
 
 

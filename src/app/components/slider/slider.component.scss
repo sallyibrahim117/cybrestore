@@ -10,9 +10,27 @@ border-color: #5677fc !important;
 
   .carousel-control-prev-icon{
     margin-right: 85px;
-
   }
 
-    .carousel-control-next-icon{margin-left: 85px;}
+  .carousel-control-next-icon{margin-left: 85px;}
 
+}
+.carousel-control-next{
+.visually-hidden{
+  margin-left: 85px !important;
+}
+}
+
+.carousel-control-prev{
+  .visually-hidden{
+    margin-right: 85px !important;
+  }
+  }
+
+
+.visually-hidden{
+  width: inherit !important ;
+  height: inherit !important;
+  clip:inherit !important;
+  color:#111
 }

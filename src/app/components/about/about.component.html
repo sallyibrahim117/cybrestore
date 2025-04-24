@@ -1,4 +1,4 @@
-<app-landscape-img></app-landscape-img>
+<app-landscape-img [title]="myTitle"></app-landscape-img>
 <app-vision></app-vision>
 
 <div class="happy-custommer  mt-5 py-5">
@@ -15,13 +15,50 @@
       </p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-4 col-12">
-      <div>
 
-      </div>
-    </div>
+
+
+
+
+
+
+        <p-carousel
+            [value]="customer()"
+            [numVisible]="1"
+            [numScroll]="1"
+            [circular]="false"
+            [autoplayInterval]="3000"
+            [responsiveOptions]="responsiveOptions">
+                <ng-template let-product pTemplate="item">
+
+    <div class="row ">
+                  <div class="col-md-4 col-12" *ngFor=" let i of customer()">
+
+                    <app-happy-customer [data]="i" ></app-happy-customer>
+
+                  </div>
+                  </div>
+                </ng-template>
+        </p-carousel>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+<div style="background: black;">
+  <div class="container p-4">
+
+    <app-footer-card></app-footer-card>
   </div>
+
 </div>
-</div>
+
+
 

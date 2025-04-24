@@ -7,13 +7,32 @@
   color: #fffc !important;
 }
 .nav-link{
-  color: white;
+  color: white !important;
 
 }
-.menu{
+.dropdown-toggle::after {
   display: none;
 }
-.pageLink:hover .menu{
-display: block !important;
+.dropdown-menu{
+  margin-top:8px;
+  border: 0px;
+  .dropdown-item{
+    color: black;
+    text-align: center;
+    font-size: 13px;
+    &:hover{
+      background-color: transparent;
+      border-bottom: 1px solid #5677fc;
+      width: fit-content;
+
+    }
+  }
 }
+
+// .menu{
+//   display: none;
+// }
+// .pageLink:hover .menu{
+// display: block !important;
+// }
 

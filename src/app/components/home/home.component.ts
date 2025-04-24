@@ -5,11 +5,17 @@ import { ProductCardComponent } from "../shared/componets/product-card/product-c
 import { AndroidPhoneComponent } from "../shared/componets/android-phone/android-phone.component";
 import { MusicVideoComponent } from "../shared/componets/music-video/music-video.component";
 import { LaptopsTabletsComponent } from "../shared/componets/laptops-tablets/laptops-tablets.component";
+import {  allHeadPhones, allProducts, computers, customerService, footerData, laptops, phones, quickLinks, released, sellingPro } from '../../data';
+import { CarousalComponent } from "../shared/componets/carousal/carousal.component";
+import { ReleasesComponent } from "../releases/releases.component";
+import { SellingFeatureComponent } from "../selling-feature/selling-feature.component";
+import { FooterComponent } from "../../footer/footer.component";
+import { FooterCardComponent } from "../shared/componets/footer-card/footer-card.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SliderComponent, CommonModule, ProductCardComponent, AndroidPhoneComponent, MusicVideoComponent, LaptopsTabletsComponent],
+  imports: [SliderComponent, CommonModule, ProductCardComponent, AndroidPhoneComponent, MusicVideoComponent, LaptopsTabletsComponent, CarousalComponent, ReleasesComponent, SellingFeatureComponent, FooterComponent, FooterCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -41,7 +47,33 @@ export class HomeComponent {
                     desc:"Apple iPhone 6s -16/32/64/ 128GB Grey",price: 449},
   ];
   whitehead=this.products[8]
-android=this.products[9]
+android=this.products[9];
+
+
+  cateogries:any[]=[{name:"products",id:1},
+    {name:"laptops &tablets",id:2},{name:"computers",id:3},{name:"headphones",id:4},{name:"phones",id:5}
+  ]
+
+  changeCategory(id:number){
+console.log(id);
+if(id == 1){
+
+
+this.products= allProducts
+} else if (id == 2) {
+  this.products= laptops;
+}
+else if (id == 3) {
+  this.products= computers;
+}
+else if (id == 4) {
+  this.products= allHeadPhones;
+}
+else if (id == 5) {
+  this.products= phones;
+}
+
+  }
 allPhones:any[]=[{title:"iPhones" ,image:"/assets/imgs/and2.jpg",
   desc:"Apple iPhone 6 4.7-Inch Black 128GB",price: 449},
   {title:"iPhones" ,image:"/assets/imgs/and3.jpg",
@@ -67,4 +99,8 @@ musicAndVideo=signal<any>({title:" music&Videos" ,image:"/assets/imgs/movi5.jpg"
 
   laptopAndTablets=signal<any>({title:" Laptop & Tablet" ,image:"/assets/imgs/1.png",
     desc:"Apple MacBook Air MJVE2 13.3-Inch Laptop 128 GB",price: 1.799})
+
+    release=released
+    selling=sellingPro
+
 }
