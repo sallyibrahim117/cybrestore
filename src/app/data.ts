@@ -33,9 +33,9 @@ export const laptops=[{title:"laptop & tablet" ,image:"/assets/imgs/pro1.jpg",
           desc:"Apple iPhone 6s -16/32/64/ 128GB Grey",price: 225},
 ]
 export const computers=[
-  {title:"Computers, Office" ,image:"/assets/imgs/com1.jpg",
+  {title:"Computers, Office" ,image:"/assets/imgs/mac.jpg",
     desc:"MApple 21.5″ iMac® Intel Core i5 8GB 1TB Silver",price: 1259},
-    {title:"Cameras&Video, Computers" ,image:"/assets/imgs/com1.jpg",
+    {title:"Cameras&Video, Computers" ,image:"/assets/imgs/mac.jpg",
       desc:"Apple 21.5-inch iMac Retina 4K Display",price: 5559},
   {title:"android" ,image:"/assets/imgs/and1.jpg",
     desc:"Apple iPhone 6s -16/32/64/ 128GB Grey",price: 449},
