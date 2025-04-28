@@ -1,0 +1,35 @@
+<div class="topHeader mt-2">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-6">
+       <ul class="d-flex gap-3">
+        <li *ngFor="let item of links"><a class="text-uppercase link fw-medium ">{{item.link}}</a></li>
+       </ul>
+      </div>
+      <div class="col-6">
+        <ul class="d-flex align-items-end justify-content-center h-100 gap-4">
+          <li class="d-flex gap-3 " *ngFor="let item of links2"><a class="icon"><i [class]="item.icon"></i>
+
+          </a>
+        <a class="link fw-medium text-uppercase">{{item.link}}</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<hr >
+<div class="container py-5">
+  <div class="row">
+    <div class="col-3">
+
+      <div class="">
+        <img class="w-100" src="/assets/imgs/logo.png"alt="">
+      </div>
+    </div>
+    <div class="col-6">
+     <app-dropdown-menu ></app-dropdown-menu>
+    </div>
+  </div>
+</div>

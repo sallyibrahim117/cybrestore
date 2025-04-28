@@ -1,9 +1,16 @@
-<div class="bg-white position-absolute rounded p-3 list">
-  <ul>
-    <!-- <li *ngFor="let item of page"> -->
-      <li *ngFor="let item of page">
-    <a [routerLink]="[item.link]" routerLinkActive="router-link-active"  class="fw-normal text-capitalize">{{item.label}}</a>
+<ul class="navbar-nav ">
+  <li>
+    <a class="navbar-brand text-white"
+    [routerLink]="navItem.link" routerLinkActive="active">{{navItem.label}}</a>
   </li>
 
+ <ng-container *ngIf="navItem.list">
+   <app-dropdown-menu [page]="navItem"></app-dropdown-menu>
+ </ng-container>
+
+
+
 </ul>
-</div>
+
+
+

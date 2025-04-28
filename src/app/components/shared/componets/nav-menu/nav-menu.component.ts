@@ -2,37 +2,18 @@ import { Component, Input } from '@angular/core';
 import { Ipages } from '../../../../interfaces/ipages';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { DropdownMenuComponent } from "../dropdown-menu/dropdown-menu.component";
+import { page1 } from '../../../../data';
 
 @Component({
   selector: 'app-nav-menu',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule, DropdownMenuComponent],
   templateUrl: './nav-menu.component.html',
   styleUrl: './nav-menu.component.scss'
 })
 export class NavMenuComponent {
-@Input()page:Ipages[] = [];
-// page:Ipages[]=[{
-//   link: "about us"}
-// ,{
-//   link: "our team",
+@Input() navItem!:Ipages
 
-// }
-// ,{
-//   link: "our services",
 
-// }
-// ,{
-//   link: "pricing",
-
-// }
-// ,{
-//   link: "contact",
-
-// }
-// ,{
-//   link: "error 404",
-
-// }
-//   ]
 }

@@ -1,4 +1,5 @@
 export interface Ipages {
-  link:string;
-label:string
+  label:string;
+  link ?:string;
+  list?:Ipages[]
 }

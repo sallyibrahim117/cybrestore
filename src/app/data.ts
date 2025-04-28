@@ -101,4 +101,30 @@ export const sellingPro=[{image:"/assets/imgs/pro5.jpg",
       ,{title:"order tracking"},{title:"FQA"}
     ]
 
-    export const quickLinks=[{title:"smartphones"},{title:"headphones"},{title:"Laptop & Tablet"},{title:"Gadgets"}]
+    export const quickLinks=[{title:"smartphones"},{title:"headphones"},{title:"Laptop & Tablet"},{title:"Gadgets"}];
+
+    export const page1=[{
+      label: "about us",link:"/about"}
+    ,{
+      label: "our team",link:"/our team"
+    }
+    ,{
+      label: "our services"
+    }
+    ,{
+      label: "pricing"
+    }
+    ,{
+      label: "contact"
+    }
+    ,{
+      label: "error 404"
+
+    }
+      ]
+// pages of navbar
+export const allPages=[{label:"home"},{label:"pages",
+  list:page1},{label:"shop"},{label:"blog"}
+  ,{label:"elements"}]
+
+
