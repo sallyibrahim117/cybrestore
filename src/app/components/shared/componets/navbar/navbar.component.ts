@@ -17,6 +17,6 @@ import { allPages, page1 } from '../../../../data';
 export class NavbarComponent {
 
 allpages=allPages
-// pages=page1
+
 
 }

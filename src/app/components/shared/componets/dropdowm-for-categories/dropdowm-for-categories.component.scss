@@ -1,0 +1,33 @@
+.btn {
+background-color: #e1e7ec;
+border-color: #e1e7ec;
+width: 155px;
+font-size: 13px;
+&:hover{
+  background-color: #e1e7ec;
+border-color: #e1e7ec;
+
+  color: black;
+}
+}
+.dropdown-toggle::after {
+  margin-left: 1.255em;
+}
+ul{
+
+    background-color: #e1e7ec;
+
+z-index: 100000;
+  .dropdown-item{
+    font-size: 13px;
+    &:hover{
+
+      background-color: #787878 !important;
+      color: white;
+    }
+
+
+  }
+
+
+}

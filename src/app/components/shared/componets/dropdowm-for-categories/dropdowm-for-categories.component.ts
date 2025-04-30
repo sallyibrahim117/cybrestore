@@ -4,13 +4,13 @@ import { RouterModule } from '@angular/router';
 import { Ipages } from '../../../../interfaces/ipages';
 
 @Component({
-  selector: 'app-dropdown-menu',
+  selector: 'app-dropdowm-for-categories',
   standalone: true,
   imports: [CommonModule,RouterModule],
-  templateUrl: './dropdown-menu.component.html',
-  styleUrl: './dropdown-menu.component.scss'
+  templateUrl: './dropdowm-for-categories.component.html',
+  styleUrl: './dropdowm-for-categories.component.scss'
 })
-export class DropdownMenuComponent {
+export class DropdowmForCategoriesComponent {
 @Input() page!:Ipages
 
 }

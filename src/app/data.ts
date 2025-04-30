@@ -127,4 +127,42 @@ export const allPages=[{label:"home"},{label:"pages",
   list:page1},{label:"shop"},{label:"blog"}
   ,{label:"elements"}]
 
+  // pages of categories of header
+  export const page2=[{
+    label: "all categories"}
+  ,{
+    label: "android"
+  }
+  ,{
+    label: "mobile"
+  }
+  ,{
+    label: "iphone"
+  }
+  ,{
+    label: "headphone"
+  }
+  ,{
+    label: "movies"
 
+  }
+  ,{
+    label: "computers"
+
+  } ,{
+    label: "laptops"
+
+  },{
+    label: "office"
+
+  },{
+    label: "screen"
+
+  },{
+    label: "products"
+
+  }
+    ]
+
+    export const categoryPage=[{label:"all categories",
+      list:page2}]

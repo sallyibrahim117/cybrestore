@@ -14,6 +14,6 @@ import { page1 } from '../../../../data';
 })
 export class NavMenuComponent {
 @Input() navItem!:Ipages
-
+pages=page1
 
 }
