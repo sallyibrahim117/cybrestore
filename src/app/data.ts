@@ -128,9 +128,8 @@ export const allPages=[{label:"home"},{label:"pages",
   ,{label:"elements"}]
 
   // pages of categories of header
-  export const page2=[{
-    label: "all categories"}
-  ,{
+  export const page2=[
+  {
     label: "android"
   }
   ,{

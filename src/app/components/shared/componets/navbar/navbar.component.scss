@@ -7,7 +7,11 @@
 .active{
   color: #fffc !important;
 }
-
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logo{
+    display: block;
+  }
+}
 
 
 // .menu{

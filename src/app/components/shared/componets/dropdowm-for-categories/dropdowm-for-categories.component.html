@@ -1,4 +1,4 @@
-<div class="dropdown p-1">
+<!-- <div class="dropdown p-1">
 
   <button class="btn btn-outline-secondary dropdown-toggle rounded-0 text-capitalize" type="button" data-bs-toggle="dropdown"
    aria-expanded="false">{{page.label}}</button>
@@ -12,7 +12,24 @@
               </li>
 
             </ul>
+</div> -->
+
+
+
+
+<div class="p-1">
+
+  <select class="form-select  rounded-0" aria-label="Default select example ">
+    <option selected class="text-capitalize ">{{page.label}}</option>
+
+
+    <option class="text-capitalize" *ngFor="let item of page.list" [value]="item.label">{{item.label}}</option>
+
+
+
+  </select>
 </div>
+
 
 
 

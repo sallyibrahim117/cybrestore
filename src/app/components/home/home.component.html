@@ -18,12 +18,12 @@
 
 <!--start category section -->
 <div class="container">
-  <div class="row">
+  <div class="row gy-5">
     <div class="col-md-3">
       <div class="border p-4 h-100">
         <h6 class="text-capitalize">categories</h6>
         <ul class="mt-4 list position-relative">
-          <li *ngFor="let item of cateogries">
+          <li class="py-1" *ngFor="let item of cateogries">
             <a class="text-capitalize" (click)="changeCategory(item.id)"><small>{{item.name}}</small> </a>
           </li>
 
@@ -32,7 +32,7 @@
     </div>
     <div class="col-md-9">
 <div class="row gy-5">
-  <div class="col-md-4" *ngFor="let pro of products">
+  <div class="col-md-4 col-sm-6 col-12 " *ngFor="let pro of products">
     <app-product-card [product]="pro"></app-product-card>
   </div>
 
@@ -45,7 +45,7 @@
 <div class="mt-5 position-relative man-sec">
   <!-- <img src="/assets/imgs/man.jpg" class="w-100" alt=""> -->
   <div class="position-absolute  card1 d-flex align-items-center h-100">
-    <div class="py-5 px-2 rounded-0  bg-white">
+    <div class="py-5 px-2 rounded-0  bg-white ">
 
 
       <a  class="d-flex gap-3 text-secondary justify-content-end px-4 py-2">
@@ -167,7 +167,7 @@
      role="tabpanel"
      aria-labelledby="pills-all-tab"
    >
-   <div class="row">
+   <div class="row gy-2">
 
      <div class="col-md-5 col-12">
 
@@ -175,7 +175,7 @@
      </div>
      <div class="col-md-7 col-12">
       <div class="row gy-2">
-        <div class="col-6" *ngFor="let i of allPhones">
+        <div class="col-md-6 col-12" *ngFor="let i of allPhones">
   <app-android-phone [androidPhone]="i"></app-android-phone>
         </div>
       </div>
@@ -191,7 +191,7 @@
         role="tabpanel"
         aria-labelledby="pills-smartphone-tab"
       >
-      <div class="row">
+      <div class="row gy-2">
 
         <div class="col-md-5 col-12">
 
@@ -199,7 +199,7 @@
         </div>
         <div class="col-md-7 col-12">
          <div class="row gy-2">
-           <div class="col-6" *ngFor="let i of allPhones">
+           <div class="col-md-6 col-12" *ngFor="let i of allPhones">
      <app-android-phone [androidPhone]="i"></app-android-phone>
            </div>
          </div>
@@ -215,7 +215,7 @@
          role="tabpanel"
          aria-labelledby="pills-android-tab"
        >
-       <div class="row">
+       <div class="row gy-2">
 
          <div class="col-md-5 ">
 
@@ -234,7 +234,7 @@
           role="tabpanel"
           aria-labelledby="pills-iphone-tab"
         >
-        <div class="row">
+        <div class="row gy-2">
 
           <div class="col-md-4 col-12">
 
@@ -261,7 +261,7 @@
     <h5 class="title" >Movies, Music & Video Games</h5>
     <hr class="text-secondary" style="margin-top: -9px;">
   </div>
-  <div class="row ">
+  <div class="row gy-2">
     <div class="col-md-4 col-12" >
 <app-android-phone [androidPhone]="allmusic()[0]"></app-android-phone> <br>
 <app-android-phone [androidPhone]="allmusic()[1]"></app-android-phone>
@@ -290,12 +290,7 @@
       <div class="col-md-8 col-12">
 
 
-
-
-
-
-
-        <section class=" ">
+        <section class="myPhones ">
 
           <div class="container cellPhone">
            <ul class="nav nav-pills " id="pills-tab" role="tablist">
@@ -347,13 +342,13 @@
             <div class="tab-content mt-4" id="pills-tabContent">
                <!-- start cell phone section -->
             <div
-            class="tab-pane fade show active text-white  mt-4"
+            class="tab-pane fade show active text-white  mt-5"
             id="pills-cellPhones"
             role="tabpanel"
             aria-labelledby="pills-cellPhones-tab"
           >
-          <div class="row gy-4">
-<div class="col-md-4 col-12"  *ngFor="let i of products">
+          <div class="row gy-5 ">
+<div class="col-md-4 col-sm-6 col-12"  *ngFor="let i of products">
 
  <app-product-card [product]="i"></app-product-card>
 
@@ -364,13 +359,13 @@
             <!-- end cell phone section -->
                <!-- start gadgets section -->
                <div
-               class="tab-pane fade show  text-white  mt-4"
+               class="tab-pane fade show  text-white  mt-5"
                id="pills-gadgets"
                role="tabpanel"
                aria-labelledby="pills-gadgets-tab"
              >
              <div class="row gy-4">
-              <div class="col-md-4 col-12"  *ngFor="let i of allPhones">
+              <div class="col-md-4 col-sm-6 col-12"  *ngFor="let i of allPhones">
 
                 <app-product-card [product]="i"></app-product-card>
 
@@ -382,13 +377,13 @@
                <!-- end gadgets section -->
                 <!-- start Laptops & Tablets -->
                 <div
-                class="tab-pane fade show  text-white  mt-4"
+                class="tab-pane fade show  text-white  mt-5"
                 id="pills-laptopsTablets"
                 role="tabpanel"
                 aria-labelledby="pills-laptopsTablets-tab"
               >
               <div class="row gy-4">
-                <div class="col-md-4 col-12"  *ngFor="let i of allmusic()">
+                <div class="col-md-4 col-sm-6 col-12"  *ngFor="let i of allmusic()">
 
                   <app-product-card [product]="i"></app-product-card>
 
@@ -410,8 +405,8 @@
 <!-- end phone and tablets -->
 
 <!-- start discount image -->
- <div class="position-relative">
-  <img src="/assets/imgs/bg.jpg" class="w-100" alt="">
+ <div class="position-relative discount">
+  <!-- <img src="/assets/imgs/bg.jpg" class="w-100" alt=""> -->
   <div class="position-absolute p-3 text-white h-100 d-flex flex-column justify-content-center" style="top: 1px; left: 30px;"
   >
   <h1 class="text-capitalize fw-light">Save Up to 40% Off</h1>
@@ -443,19 +438,19 @@
   <!--start footer section -->
 <section class="footer">
 <div class="container py-5">
-  <div class="row">
+  <div class="row gy-3">
     <div class="col-md-4 col-12">
       <div class="card footerCrd py-3 px-4 rounded-0">
-        <div class="row align-items-center">
+        <div class="row align-items-center ">
           <div class="col-md-3 col-12">
-            <div>
+            <div class="usrFooter">
 
               <img src="/assets/imgs/foot1.png" class="w-100" alt="">
             </div>
 
           </div>
           <div class="col-md-9 col-12">
-            <div>
+            <div class="cardContent">
               <h4 class="text-capitalize text-white fw-light">call center</h4>
               <h3 class="fw-light"><a class="text-primary footLink">
                 (734) 555.1212</a></h3>
@@ -469,14 +464,14 @@
       <div class="card footerCrd py-3 px-4 rounded-0">
         <div class="row align-items-center">
           <div class="col-md-3 col-12">
-            <div>
+            <div class="usrFooter">
 
               <img src="/assets/imgs/foot2.png" class="w-100" alt="">
             </div>
 
           </div>
           <div class="col-md-9 col-12">
-            <div>
+            <div class="cardContent">
               <h4 class="text-capitalize text-white fw-light m-0">free delivery</h4>
              <p class="text-white m-0"><small class="para">Free delivery on the territory of USA for allamounts over $100</small></p>
             </div>
@@ -488,14 +483,14 @@
       <div class="card footerCrd py-3 px-4 rounded-0">
         <div class="row align-items-center">
           <div class="col-md-3 col-12">
-            <div>
+            <div class="usrFooter">
 
               <img src="/assets/imgs/foot3.png" class="w-100" alt="">
             </div>
 
           </div>
           <div class="col-md-9 col-12">
-            <div>
+            <div class="cardContent">
               <h4 class="text-capitalize text-white fw-light">gift cards</h4>
               <h3 class="fw-light"><a class="text-primary footLink">
                 Save up to 20%</a></h3>
