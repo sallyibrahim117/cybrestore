@@ -407,7 +407,7 @@
 <!-- start discount image -->
  <div class="position-relative discount">
   <!-- <img src="/assets/imgs/bg.jpg" class="w-100" alt=""> -->
-  <div class="position-absolute p-3 text-white h-100 d-flex flex-column justify-content-center" style="top: 1px; left: 30px;"
+  <div class="position-absolute p-3 text-white h-100 d-flex flex-column justify-content-center" style="top: 1px;     left: 139px;"
   >
   <h1 class="text-capitalize fw-light">Save Up to 40% Off</h1>
   <h6 class="text-capitalize fw-light">On All Apple Products</h6>
@@ -420,14 +420,16 @@
  <!-- end carousal section -->
   <!-- start release -->
    <div class="container py-5">
-    <div class="row mt-5">
+    <div class="row mt-5 releasedSec">
       <div class="col-md-4 col-12 " *ngFor="let i of release">
     <app-releases [data]="i"></app-releases>
       </div>
 
     </div>
     <div class="row">
-      <div class="col-md-4 col-12" *ngFor="let item of selling">
+
+        <div class="col-md-4 col-12" *ngFor="let item of selling">
+
 
         <app-selling-feature [sellingFeatur]="item"></app-selling-feature>
       </div>

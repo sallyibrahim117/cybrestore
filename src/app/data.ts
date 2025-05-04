@@ -173,12 +173,12 @@ export const phones = [
   },
 ];
 
+
 export const released = [
-  { title: 'Hot New Releases' },
+  { title: 'Hot New Releases'},
   { title: 'Top Selling Products' },
   { title: 'Featured Products' },
 ];
-
 export const sellingPro = [
   {
     image: '/assets/imgs/pro5.jpg',
@@ -189,18 +189,24 @@ export const sellingPro = [
   {
     image: '/assets/imgs/pro8.jpg',
     desc: '	Apple iPad 9.7 128GB WiFi',
-    price: 999,
+    price: 586,
+
+
   },
   {
     image: '/assets/imgs/pro9.jpg',
     desc: '	Apple iPad 9.7 128GB WiFi',
     price: 584,
+
+
   },
   { image: '/assets/imgs/pro2.jpg', desc: 'Apple VIP Membership', price: 259 },
   {
     image: '/assets/imgs/pro4.jpg',
     desc: '	Apple iPad 9.7 128GB WiFi',
-    price: 999,
+    price: 799,
+    oldPrice: 999,
+
   },
   {
     image: '/assets/imgs/pro8.jpg',
@@ -215,7 +221,8 @@ export const sellingPro = [
   {
     image: '/assets/imgs/iron.jpg',
     desc: '	Apple iPad 9.7 128GB WiFi',
-    price: 999,
+    price: 222,
+    oldPrice: 999,
   },
   {
     image: '/assets/imgs/whitehead.jpg',
@@ -272,12 +279,13 @@ export const page1 = [
     label: 'error 404',
   },
 ];
+export const shopPage =[{label:"",link:""}]
 // pages of navbar
 export const allPages = [
   { label: 'home' },
   { label: 'pages', list: page1 },
   { label: 'shop' },
-  { label: 'blog' },
+  // { label: 'blog' },
   { label: 'elements' },
 ];
 

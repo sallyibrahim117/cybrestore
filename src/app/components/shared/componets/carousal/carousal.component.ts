@@ -17,14 +17,16 @@ export class CarousalComponent {
 
 ];
 
-allimgs=signal<any[]>([{im:"/assets/imgs/books.png",name:"books &audios"},
+allimgs=signal<any[]>([{im:"/assets/imgs/books.png",name:"books&audios"},
 
   {im:"/assets/imgs/app.png",name:"applicants"},{im:"/assets/imgs/computers.png",name:"computers"},
-  {im:"/assets/imgs/camandvideo.png",name:"camera&videos"},
-  {im:"/assets/imgs/camandvideo.png",name:"camera&videos"},
-  {im:"/assets/imgs/camandvideo.png",name:"camera&videos"},
-  {im:"/assets/imgs/camandvideo.png",name:"camera&videos"},
+
   {im:"/assets/imgs/gadgets.png",name:"gadgets "},{im:"/assets/imgs/laptopandtablets.png",name:"laptop &tablets"}
+
+  ,{im:"/assets/imgs/computers.png",name:"computers"}
+  ,{im:"/assets/imgs/computers.png",name:"computers"}
+  ,{im:"/assets/imgs/laptopandtablets.png",name:"laptop &tablets"}
+  ,{im:"/assets/imgs/computers.png",name:"computers"}
 ])
 responsiveOptions: any[] | undefined;
 
@@ -43,7 +45,11 @@ ngOnInit() {
             breakpoint: '767px',
             numVisible:4,
             numScroll: 1
-        }
+        },  {
+          breakpoint: '500px',
+          numVisible:2,
+          numScroll: 1
+      }
     ];
 }
 

@@ -153,4 +153,19 @@ background-repeat: no-repeat;
   .myPhones{
     margin-top: 25px;
   }
+  .usrFooter
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 20% !important;
+    }
+  }
+  .discount{
+    background-position: left;
+  }
+  .releasedSec{
+    display: none;
+  }
 }
